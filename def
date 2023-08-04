@@ -1,0 +1,7 @@
+creen.bgcolor("black")
+ 
+def fireworks():
+    for i in range(30):
+        pen.color("red")
+        pen.forward(200)
+        pen.left(170)
