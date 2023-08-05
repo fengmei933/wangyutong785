@@ -1,0 +1,20 @@
+protected boolean doIsAuthenticated(String inUserId, String inPassword) 
+			throws UserProfileResourceException { 
+				 	 
+		System.out.println("SampleUserManagerImpl.doIsAuthenticated --- ");  
+ 
+		boolean isauthenticated = false; 
+		 
+		try { 
+    
+			User aUser = proxy.createUserFromExternal(inUserId); 
+			isauthenticated = ( (aUser.getLoginId()==inUserId) && (aUser.getPassword()==inPassword)); 
+			if (isauthenticated) 
+				System.out.println("SampleUserManagerImpl.doIsAuthenticated:- User "+inUserId+" is successfully authenticated."); 
+			else 
+				System.out.println("SampleUserManagerImpl.doIsAuthenticated:- User "+inUserId+" :unable to authenticate (wrong login and password)"); 
+		} catch (Exception ex) { 
+			isauthenticated = false; 
+			System.out.println("SampleUserManagerImpl.doIsAuthenticated:- User "+inUserId+" can not authenticate (user not found)"); 
+			throw new com.sun.content.server.service.security.util.UserProfileResourceException(ex.toString()); 
+		} 
