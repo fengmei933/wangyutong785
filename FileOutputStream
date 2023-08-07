@@ -1,0 +1,18 @@
+  String outFilename = 
+      properties.getProperty("ExportToFile.FileName"); 
+    if (outFilename != null) 
+    { 
+      FileOutputStream fileOutStream = null; 
+      try 
+      { 
+        // get the first byte[] in the map 
+        // ignore the rest for this sample  
+        byte[] bytes = (byte[]) 
+          content.getMimeBytesMap().values().iterator().next(); 
+ 
+        // Write the byte[] to the output file. 
+        fileOutStream = new FileOutputStream(outFilename); 
+        fileOutStream.write(bytes); 
+        fileOutStream.flush(); 
+        fileOutStream.close(); 
+        fileOutStream = null; 
