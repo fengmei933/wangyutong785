@@ -1,0 +1,22 @@
+  public SampleUserImpl(String uid, String pwd, String fname, String lname,String mname,String gender, 
+       String street1, String street2,String city, String state,String postalcode, 
+       String country,String email,String phone,Date actdate,Date deactdate, 
+       String salutation, boolean enabled, String uniqueDeviceId, boolean isprepay) { 
+ 
+        fInfo = new Hashtable(); 
+ 
+        setLoginId(uid); 
+        setPassword(pwd); 
+        setFirstName(fname); 
+        setLastName(lname); 
+        setMiddleName(mname); 
+        setGender(gender); 
+        setStreet1(street1); 
+        setStreet2(street2); 
+        setCity(city); 
+        setState(state); 
+        setPostalCode(postalcode); 
+        setCountry(country); 
+        setEmail(email); 
+        setPhone(phone); 
+        setFixedPhone(phone); 
