@@ -1,0 +1,15 @@
+{
+				cout << "  ";
+			}
+		}
+		cout << endl;
+	}
+ 
+	SetPos(17, 8);
+	cout << "俄 罗 斯 方 块" << endl;
+	SetPos(13, 12);
+	cout << "↑旋转方块  ↓加速下滑" << endl;
+	SetPos(12, 14);
+	cout << "← →左右移动  空格  暂停" << endl;
+	SetPos(15, 20);
+	cout << "0 退出  Enter 开始" << endl;
