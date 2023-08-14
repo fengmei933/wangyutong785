@@ -1,0 +1,8 @@
+ */
+    private static void addProduct( PreparedStatement ri, int prod_no, String prod_name, String price )
+        throws ULjException
+    {
+        ri.set( ORDINAL_PROD_NO, prod_no );
+        ri.set( ORDINAL_PROD_NAME, prod_name );
+        ri.set( ORDINAL_PROD_PRICE, price );
+        ri.execute();
