@@ -1,0 +1,9 @@
+
+        // Write the byte[] to the output file. 
+        fileOutStream = new FileOutputStream(outFilename); 
+        fileOut
+        // Write the byte[] to the output file. 
+        fileOutStream = new FileOutputStream(outFilename); 
+        fileOutStream.write(bytes); 
+        fileOutStream.flush(); .write(bytes); 
+        fileOutStream.flush(); 
