@@ -1,0 +1,12 @@
+ state, 
+                postalcode, 
+                country, 
+                email, 
+                phone, 
+                activatedate, 
+                deactivatedate, 
+                salutation, 
+                enabled, 
+			    uniqueDeviceId, 
+                prepay); 
+ 
