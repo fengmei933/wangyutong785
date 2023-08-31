@@ -1,0 +1,7 @@
+ String providerURL = null; 
+    String topicName = null; 
+    if (args.length == 9) 
+    { 
+      clientID = args[0]; 
+      subName = args[1]; 
+      selector = args[2]; 
