@@ -1,0 +1,7 @@
+  String clientPassword = OperatorProxyProperties.CLIENT_PASSWRD; 
+     
+            // instan 
+            try { 
+			externalUserMgr = new ExternalClientObject(hostname, port, 
+             clientLoginId, clientPassword); 
+            } catch (Exception expt) { 
